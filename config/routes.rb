@@ -12,5 +12,7 @@ Rails.application.routes.draw do
   
   get '/signup', to: 'users#new'
 
-  get '/links' to: 'static_pages#links'
+  get '/links', to: 'static_pages#links'
+  
+  resources :users
 end
